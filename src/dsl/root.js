@@ -1,7 +1,7 @@
 const { ROOT } = require('../constants/dsl');
 const { isString, isArray } = require('../util/types.js');
 const { dslParseError } = require('../util/errors');
-const contract = require('../util/contract');
+const precondition = require('../util/precondition');
 
 function root(path, children) {
  
@@ -12,7 +12,7 @@ function root(path, children) {
   };
 }
 
-module.exports =contract(
+module.exports = precondition(
   [isString, isArray], 
   () => dslParseError('root'), 
   root

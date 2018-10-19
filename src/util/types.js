@@ -1,11 +1,15 @@
 const isString = s => typeof s === 'string';
-isString.label = "String";
+isString.label = 'String';
 
 const isArray = a => Array.isArray(a);
-isArray.label = "Array";
+isArray.label = 'Array';
 
-module.exports = {
-    isString,
-    isArray
+const isFunction = f => typeof f === 'function';
+isFunction.label = 'Function';
+
+module.exports = {  
+  isString,
+  isArray,
+  isFunction
 };
 

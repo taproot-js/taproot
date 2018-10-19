@@ -1,6 +1,6 @@
 const { curry } = require('ramda');
 
-function contract(validators, toThrow, fn) {
+function precondition(validators, toThrow, fn) {
   return function(...args) {
     const valid = validators.map((v, i) => v(args[i])).every(Boolean);
     
@@ -10,4 +10,4 @@ function contract(validators, toThrow, fn) {
   }
 }
 
-module.exports = curry(contract);
+module.exports = curry(precondition);

@@ -4,7 +4,7 @@
   "description": "A framework and DSL for generating APIs",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha ./test --recursive"
   },
   "author": "Bradcomp",
   "license": "MIT",

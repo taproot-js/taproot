@@ -6,4 +6,4 @@ module.exports = {
   POST: '@@post',
   DEL: '@@delete',
   HEADER: '@@header'
-}
+};

@@ -1,5 +1,5 @@
 const { PATH } = require('../constants/dsl');
-const contract = require('../util/contract');
+const precondition = require('../util/precondition');
 const { isString, isArray } = require('../util/types');
 const { dslParseError } = require('../util/errors');
 
@@ -12,7 +12,7 @@ function path(path, children) {
   }
 }
 
-module.exports = contract(
+module.exports = precondition(
   [isString, isArray], 
   () => dslParseError('path'), 
   path
