@@ -5,5 +5,6 @@ module.exports = {
   PUT: '@@put',
   POST: '@@post',
   DEL: '@@delete',
-  HEADER: '@@header'
+  HEADER: '@@header',
+  MODEL: '@@model'
 };
