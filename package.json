@@ -9,6 +9,7 @@
   "author": "Bradcomp",
   "license": "MIT",
   "dependencies": {
+    "body": "^5.1.0",
     "ramda": "^0.25.0"
   },
   "devDependencies": {
